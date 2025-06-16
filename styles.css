@@ -93,7 +93,9 @@ a:not([class]) {
 img,
 picture {
   max-width: 100%;
-  display: block;
+  display: ruby;
+  padding: 20px;
+  
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -111,7 +113,7 @@ select {
 }
 
 :focus {
-  outline: 2px dashed #00ff19;
+  outline: 2px dashed #351a40;
   outline-offset: 0.25rem;
 }
 
@@ -201,34 +203,43 @@ section {
   padding: var(--space-2xl) var(--space-l);
 }
 section#hero {
-  background: linear-gradient(rgba(26, 26, 64, 0.9), rgba(26, 26, 64, 0.9)),
-    url("/assets/background_image.jpg");
+  background: linear-gradient(rgba(49, 26, 64, 0.9), rgba(59, 26, 64, 0.9)),
+    url("/assets/japan.jpg");
   padding-bottom: 4px;
   background-size: cover;
   background-position: top;
   background-attachment: scroll;
-  color: #fafafa;
-  --color-accent: #8a2be2;
+  color: #b5a4a4;
+  --color-accent: #ff69;
 }
 section#about {
   background-color: #ffffff;
   color: #333;
   --color-accent: #ffd700;
+
+}
+html, body {
+  background-color: #1a2340; /* or your preferred purple */
+  margin: 0;
+  padding: 0;
+}
+
+
 }
 section#work {
-  background-color: #87ceeb;
-  color: #0c0c0c;
+  background-color: #000080;
+  color: rgba(255, 255, 255, 0.82);
   --color-accent: #2e8b57;
 }
 section#contact {
-  background-color: #4b0082;
-  color: #e6e6fa;
+  background-color: #c0c0c0;
+  color: #351a40;
   --color-accent: #ff4500;
 }
 section#footer {
   background-color: #1a1a40;
-  color: #fafafa;
-  --color-accent: #8a2be2;
+  color: rgb(255, 255, 255);
+  --color-accent: #ff4500
 }
 
 /* style the header */
@@ -238,7 +249,7 @@ section#footer {
 }
 .site_header_nav ul li a {
   text-decoration: none;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.82);
 }
 
 /* hero css */
@@ -254,18 +265,22 @@ section#footer {
 
 /* about section */
 .about_content {
-  padding: var(--space-xl) 0;
-  transform: skewX(-10deg);
+  transform: skewX(0deg);
+  color: navy;
 }
+
 @media (max-width: 468px) {
   .about_content {
     transform: skewX(0deg);
   }
 }
+
+  }
+}
 .about_figure {
   padding: var(--space-xl) 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border: 2px solid #ccc;
+  border: 2px solid #b5a4a4;
   display: inline-block;
   padding: 5px;
 }
@@ -326,10 +341,12 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #0056b3;
+  background-color: rgba(49, 26, 64, 0.9);
 }
 
 /* footer section */
 section#footer {
   padding: var(--space-l) var(--space-l);
+
 }
+
