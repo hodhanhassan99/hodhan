@@ -204,7 +204,7 @@ section {
 }
 section#hero {
   background: linear-gradient(rgba(49, 26, 64, 0.9), rgba(59, 26, 64, 0.9)),
-    url("/assets/japan.jpg");
+    url("assets/japan.jpg");
   padding-bottom: 4px;
   background-size: cover;
   background-position: top;
